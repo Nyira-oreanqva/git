@@ -2,7 +2,7 @@
 /* FCHIER:                          usine.c                               */ 
 /*AUTEUR:                           PIERRE-LOUIS Alven Bernadin           */    
 /*DATE DE CREATIION:                27/09/2025                            */
-/*DATE DE MODIFICATION:             28/09/2025                            */
+/*DATE DE MODIFICATION:             03/10/2025                            */
 /*DESCRIPTION:                      fichier contenant les fonctions de 
                                     gestion des usines.                   */
 /*------------------------------------------------------------------------*/
@@ -14,24 +14,25 @@
 
 
 //fonction pour inserer une usine
-void insererUsine() 
+void insererUsine(int ID_commune) 
 {
     Usine nouvelleUsine;
-    char buffer[50]; // Buffer temporaire pour la saisie
+    char texte[50]; // pour recevoir le texte à saisir
 
+    //le champ nouvelleUsine.Id_usine n'est pas definitif. l'iD de l'usine sera incrémenté(via un pointeur) automatiquement dans cette fonction ou dans la fonction appelante(on verra ca plus tard) 
     nouvelleUsine.Id_usine= 1;
-    nouvelleUsine.Id_com= 1;
+    nouvelleUsine.Id_com= ID_commune;
 
     printf("Entrez le nom de l'usine: ");
-    fgets(buffer, sizeof(buffer), stdin);
+    fgets(texte, sizeof(texte), stdin);
     // Supprime le retour à la ligne (\n) si présent
-    buffer[strcspn(buffer, "\n")] = '\0';
-    strcpy(nouvelleUsine.Usi_nom, buffer); //Pour copier le nom dans le champ nom de l'usine
+    texte[strcspn(texte, "\n")] = '\0';
+    strcpy(nouvelleUsine.Usi_nom, texte); //Pour copier le nom dans le champ nom de l'usine
 
     printf("Entrez la description de l'usine: ");
-    fgets(buffer, sizeof(buffer), stdin);
-    buffer[strcspn(buffer, "\n")] = '\0';
-    strcpy(nouvelleUsine.Usin_desc, buffer); //Pour copier le nom dans le champ nom de l'usine
+    fgets(texte, sizeof(texte), stdin);
+    texte[strcspn(texte, "\n")] = '\0';
+    strcpy(nouvelleUsine.Usin_desc, texte); //Pour copier le nom dans le champ nom de l'usine
 
     int retour= ecrire_usine("usine.dat", &nouvelleUsine);
     if(retour== 1)
@@ -141,9 +142,3 @@ void mod_usine(int ID)
     }
 }
 
-int main()
-{
-    insererUsine();
-    mod_usine(1);
-    return 0;
-}
