@@ -38,4 +38,10 @@ typedef struct{
     int Lot_qte;
 }Hist_production;
 
+//Prototypes des fonctions
+void insererUsine();
+int ecrire_usine(const char *nom_fichier, Usine *u);
+int lire_usine(const char *nom_fichier, int id_recherche, Usine *resultat);
+void mod_usine(int ID);
+
 #endif // ENTREP_H
