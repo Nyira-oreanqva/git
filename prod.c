@@ -152,7 +152,16 @@ int obtenir_dernier_id_produit(const char *nom_fichier)
     return dernier_id;
 }
 
-//fonction pour modifier un produit existant
+/*------------------------------------------------------------------------*/
+/*FONCTION:                         mod_produit                           */ 
+/*AUTEUR:                           PIERRE-LOUIS Alven Bernadin           */ 
+/*PARAMETRE:                        Aucun                                 */
+/*VALEUR DE RETOUR:                 Aucune                                */
+/*DATE DE CREATIION:                22/09/2025                            */
+/*DATE DE MODIFICATION:             22/10/2025                            */
+/*DESCRIPTION:                      Fonction pour modifier les informations
+                                    d'un produit                          */
+/*------------------------------------------------------------------------*/
 void mod_produit()
 {
     Produit produit_a_modifier;
