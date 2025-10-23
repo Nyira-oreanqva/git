@@ -39,9 +39,13 @@ typedef struct{
 }Hist_production;
 
 //Prototypes des fonctions
-void insererUsine();
+void insererUsine(int ID_commune);
 int ecrire_usine(const char *nom_fichier, Usine *u);
 int lire_usine(const char *nom_fichier, int id_recherche, Usine *resultat);
-void mod_usine(int ID);
+int lire_produit(const char *nom_fichier, int id_recherche, Produit *resultat);
+void mod_usine();
+void mod_produit();
+void insererProduit();
+int obtenir_dernier_id_usine(const char *nom_fichier);
 
 #endif // ENTREP_H
