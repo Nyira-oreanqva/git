@@ -2,7 +2,7 @@
 /* FICHIER:                          usine.c                               */ 
 /*AUTEUR:                           PIERRE-LOUIS Alven Bernadin           */    
 /*DATE DE CREATIION:                27/09/2025                            */
-/*DATE DE MODIFICATION:             03/10/2025                            */
+/*DATE DE MODIFICATION:             22/10/2025                            */
 /*DESCRIPTION:                      fichier contenant les fonctions de 
                                     gestion des usines.                   */
 /*------------------------------------------------------------------------*/
