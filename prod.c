@@ -2,7 +2,7 @@
 /* FICHIER:                         prod.c                                */ 
 /*AUTEUR:                           PIERRE-LOUIS Alven Bernadin           */    
 /*DATE DE CREATIION:                26/09/2025                            */
-/*DATE DE MODIFICATION:             17/10/2025                            */
+/*DATE DE MODIFICATION:             22/10/2025                            */
 /*DESCRIPTION:                      fichier contenant les fonctions de 
                                     gestion des produits                  */
 /*------------------------------------------------------------------------*/
