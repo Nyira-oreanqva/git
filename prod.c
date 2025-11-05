@@ -1,8 +1,8 @@
 /*------------------------------------------------------------------------*/
 /* FICHIER:                          usine.c                               */ 
 /*AUTEUR:                           PIERRE-LOUIS Alven Bernadin           */    
-/*DATE DE CREATIION:                27/09/2025                            */
-/*DATE DE MODIFICATION:             22/10/2025                            */
+/*DATE DE CREATIION:                26/09/2025                            */
+/*DATE DE MODIFICATION:             17/10/2025                            */
 /*DESCRIPTION:                      fichier contenant les fonctions de 
                                     gestion des usines.                   */
 /*------------------------------------------------------------------------*/
@@ -420,17 +420,8 @@ int obtenir_dernier_id_produit(const char *nom_fichier)
     return dernier_id;
 }
 
-/*------------------------------------------------------------------------*/
-/*FONCTION:                         mod_produit                           */ 
-/*AUTEUR:                           PIERRE-LOUIS Alven Bernadin           */ 
-/*PARAMETRE:                        Aucun                                 */
-/*VALEUR DE RETOUR:                 Aucune                                */
-/*DATE DE CREATIION:                22/09/2025                            */
-/*DATE DE MODIFICATION:             22/10/2025                            */
-/*DESCRIPTION:                      Fonction pour modifier les informations
-                                    d'un produit                          */
-/*------------------------------------------------------------------------*/
-void mod_prod()
+//fonction pour modifier un produit existant
+void mod_produit()
 {
     Produit produit_a_modifier;
     int choix, ID;

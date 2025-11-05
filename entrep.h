@@ -2,7 +2,7 @@
 /* FCHIER:                          entrep.h                              */
 /*AUTEUR:                           PIERRE-LOUIS Alven Bernadin           */    
 /*DATE DE CREATIION:                26/09/2025                            */  
-/*DATE DE MODIFICATION:             26/09/2025                            */ 
+/*DATE DE MODIFICATION:             22/10/2025                            */ 
 /*DESCRIPTION:                      fichier contenant les nouveaux types de
                                     données, les prototypes, les structures 
                                     de données et les constantes          */    
